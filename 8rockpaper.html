@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+    <p>rock paper scissors</p>
+    <button onclick="
+    randomno=Math.random();
+    //selects no between 0 and 1 
+    //use and operator
+    //const computermov=''; cant be used beacause value changes
+    let computermov=''; 
+    if(randomno>0 && randomno<1/3){
+computermov='rock';
+    }
+    else if(randomno>1/3 && randomno<2/3){
+computermov='paper';
+    }
+    else if(randomno>2/3 && randomno<1){
+computermov='scissors';
+    }
+    console.log(computermov);
+
+    let result ='';
+    if(computermov=='rock'){result='tie';}
+     else if (computermov=='paper'){result='try again';}
+     else if (computermov=='scissors'){result='win';}
+
+alert(`you picked rock computer picked ${computermov} result ${result}`);
+
+    ">rock</button>
+
+
+
+
+
+
+    <button onclick="
+    randomno=Math.random();
+    //selects no between 0 and 1 
+    //use and operator
+    //const computermov=''; cant be used beacause value changes
+    let computermov=''; 
+    if(randomno>0 && randomno<1/3){
+computermov='rock';
+    }
+    else if(randomno>1/3 && randomno<2/3){
+computermov='paper';
+    }
+    else if(randomno>2/3 && randomno<1){
+computermov='scissors';
+    }
+    console.log(computermov);
+
+    let result ='';
+    if(computermov=='rock'){result='win';}
+     else if (computermov=='paper'){result='tie';}
+     else if (computermov=='scissors'){result='try again';}
+
+alert(`you picked paper computer picked ${computermov} result ${result}`);
+
+    ">paper</button>
+    <button onclick="
+    randomno=Math.random();
+    //selects no between 0 and 1 
+    //use and operator
+    //const computermov=''; cant be used beacause value changes
+    let computermov=''; 
+    if(randomno>0 && randomno<1/3){
+computermov='rock';
+    }
+    else if(randomno>1/3 && randomno<2/3){
+computermov='paper';
+    }
+    else if(randomno>2/3 && randomno<1){
+computermov='scissors';
+    }
+    console.log(computermov);
+
+    let result ='';
+    if(computermov=='rock'){result='try again';}
+     else if (computermov=='paper'){result='win';}
+     else if (computermov=='scissors'){result='tie';}
+
+alert(`you picked scissors computer picked ${computermov} result ${result}`);
+
+    ">scissors</button>
+ <script>
+  //computer randomly select a move
+ </script>
+  </script>
+</body>
+</html>
