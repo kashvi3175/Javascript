@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>hello</button>
+  <button class="js-button">second</button>
+  <script>
+//dom is built in document object contains propertie like title and body ,linked to webpage 
+
+
+    document.body.innerHTML='hello';
+    //removes everythig and replaces with text
+
+
+    document.title='good job';//gives new title
+    console.log(document.title);
+    console.log(document.body);
+     console.log( typeof document.body);
+
+
+
+
+     console.log(document.body.innerHTML);//gives everything inside the body
+document.body.innerHTML='changed';
+//can also help to change the element
+document.body.innerHTML='<button>changed<button>';//wil now change to button
+
+
+
+
+
+//method is a function inside the object 
+
+console.log(document.querySelector('button'));//retrieve information whole code
+
+
+console.log(document.querySelector('button').innerHTML);//only gives the text inside
+
+
+//now change the contents
+
+document.querySelector('button').innerHTML='good';//contents chnaged using querySelector
+
+console.log(document.querySelector('.js-button'));//gets the other button
+
+
+
+
+  </script>
+</body>
+</html>
