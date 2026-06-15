@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!---objects groups multiple values together-->
+<script>
+  const product=
+{
+  name:'socks',
+  price:200
+};
+console.log(product);//access all member
+console.log(product.name);
+console.log(product.price);
+
+//change value
+product.name="ball";//property value pair
+console.log(product);
+
+
+//add new property
+
+product.type='cloth';
+console.log(product);
+
+//deleting property 
+
+delete product.type;
+console.log(product);
+
+
+  
+
+console.log(product['name'])
+//another notation u can use other names with - sign also by this
+
+console.log(product['mrp-today']);//with dot would be error but with [] undefined
+
+const product5={
+  ['mrp-today']:60,
+  rating:{
+    //nesting
+    stars:8,
+    count:7
+
+  },
+  //function in an object
+  fun: function function1(){
+     console.log('fun inside ob');//method is fumction inside object
+
+  }
+};
+
+product5.fun();
+//built in object console math json localstorage
+
+
+
+  </script>
+</body>
+</html>

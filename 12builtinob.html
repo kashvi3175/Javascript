@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+//built in objects are consolemathJSonlocalstorage
+// -------------------------JSON--------------------------
+    //json stands for javascript object notation
+    //uses double qoutes and doesnt support function
+    //sending data between computers and storing data
+const product5={
+  ['mrp-today']:60,
+  rating:{
+    //nesting
+    stars:8,
+    count:7
+
+  },
+  //function in an object
+  fun: function function1(){
+     console.log('fun inside ob');//method is fumction inside object
+
+  }
+};
+
+
+//convert from javascript object to json
+console.log(JSON.stringify(product5));//string type
+//will remove function as json doesnot support functions
+
+
+//convert json to javascript object 
+
+console.log(JSON.parse(JSON.stringify(product5)));
+
+
+
+
+
+//======================localStorage=====================
+
+
+
+//storing values in local storage
+
+localStorage. setItem('message','hello');//can only use string by using json.stringify
+
+
+
+console.log('hello'.length);//will return length of the string 
+
+
+console.log('hello'.toUpperCase());//caputalise auto-boxing (objects wraps other datatypes  )
+
+const object1={//contains reference, we can change value
+  message:'bye'
+};
+const object2 =object1;//copying the same reference
+object1.message='good job';
+ console.log(object1);
+ console.log(object2);//same
+
+
+
+ 
+const object3={//contains reference, we can change value
+  message:'good job'
+};
+
+console.log(object1===object3);//not true compares references
+
+console.log(object1===object2);// true compares references
+
+
+const object4={//contains reference, we can change value
+  message:'good job',
+  price:78
+};
+const {message,price}=object4;//deconstruct
+// or const message= object4.message;
+ //this will store the value of oject4.message in message
+
+
+ console.log(message);//will return value which was saved in object4 after ddeconstructing 
+
+console.log(price);
+
+ //======================================================
+ const object5={
+  message:message
+//you can also only write message as property value is same
+};//takes value of above object4.message 
+ console.log(message);
+
+
+
+ const object6={
+  method(){
+    console.log('hello');
+
+  }};
+ 
+ object6.method();
+
+
+  </script>
+</body>
+</html>
