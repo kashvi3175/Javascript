@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   const array= [10,30,70];//array
+   console.log(array[0]);//extract first element
+
+
+
+   //you can change the value in the array 
+
+   array[0]=66;
+   console.log(array);
+   console.log(Array.isArray([]));//returns true
+   //array is a special object
+
+   //add value  to array 
+
+    array.push(199);
+   console.log(array);
+array.splice(0,2);//removes value mention the index first then the no of values
+console.log(array);
+
+
+console.log(array.length);
+
+let randomno=0;
+while(randomno<0.5){
+  randomno=Math.random();
+
+}
+console.log(randomno);
+
+
+const todolist=[
+  'wash','dry','clean'
+];
+
+for(let i = 0;i<todolist.length;i++){
+
+  // console.log(i);//returns index no and last one will be used in the other commands
+  const value=todolist[i];
+  console.log(value);
+}
+
+//calculating the total of array 
+const nums=[1,2,3];
+let sum = 0 ;
+for(let i = 0;i<nums.length;i++){
+ sum = sum +  nums[i];
+
+}
+console.log(sum);
+
+//saving in other array
+ // example we are storing te double
+
+ let doublenums=[];
+ for(let i = 0;i<nums.length;i++){
+  doublenums.push(nums[i]*2);
+ }
+ console.log(doublenums);
+ //arrays are like references
+
+
+ const array6= [10,30,70];
+ const array7=array6;
+ aarray6.push(8);
+ //changes also apply in array7
+const array9=array6.slice();//will create copy no change
+   </script>
+
+
+
+
+   
+</body>
+</html>
