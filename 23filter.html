@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <script>
+  //filtering according to certain condition 
+  const ages = [12, 18, 25, 15, 30];
+
+const adults = ages.filter(age => age >= 18);
+console.log(adults);
+
+
+//using other elements
+
+const users = [
+  { name: "Alice", active: true },
+  { name: "Bob", active: false },
+  { name: "Charlie", active: true }
+];
+
+const activeUsers = users.filter(user => user.active);
+
+console.log(activeUsers);
+
+console.log(adults);
+ </script></body>
+</body>
+</html>
